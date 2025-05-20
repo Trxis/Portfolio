@@ -7,7 +7,7 @@ news.addEventListener("click", function () {
 });
 
 let typed = new Typed(".input", {
-    strings: ["frontend developer", "photo shopper", "web developer"],
+    strings: ["frontend developer", "photoshopper", "web developer"],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,

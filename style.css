@@ -5,7 +5,7 @@
     font-family: "poppins", sans-serif;
     text-decoration: none;
     scroll-behavior: smooth;
-    font-size: 12px;
+    font-size: 30px;
 }
 
 body {
@@ -22,10 +22,14 @@ body {
 
 header {
     padding: 40px 0 30px;
+    width: 100%;
+    background-color: #444444;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    position: fixed;
+    z-index: 1000;
 }
 
 .logo {
@@ -264,6 +268,7 @@ section {
 }
 
 .about-text p {
+    text-align: center;
     color: aliceblue;
     font-size: 20px;
     line-height: 1.4;
@@ -323,8 +328,9 @@ section {
 
 .experience-details-container {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    flex-direction: column; /* Stack children vertically */
+    gap: 2rem; /* Add space between sections */
+    align-items: center; /* Center content horizontally */
 }
 
 .article-container {
@@ -375,6 +381,7 @@ article .icon {
     font-weight: 600;
     box-shadow: 0 0 5px #0ef,
     0 0 25px #0ef;
+    cursor: pointer;
 }
 
 .btn-box1:hover {
